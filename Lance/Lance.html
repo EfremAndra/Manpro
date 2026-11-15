@@ -3,33 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-
-    </style>
+    <title>Profile</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Profile</h1>
-    <h2>Lance A. W.</h2>
-    <img src="happy_dog.jpg">
-    <h2>Hobbies:</h2>
-    <ul>
-        <li>Sleeping</li>
-        <li>Drawing</li>
-        <li>Listening to music</li>
-    </ul>
-    <h2>Skills:</h2>
-    <ul>
-        <li>Drawing</li>
-        <li>Singing</li>
-        <li>Playing</li>
-        <li>English speaking</li>
-    </ul>
-    <h2>Last Activity</h2>
-    <p>The last thing i did was sleeping :P</p>
+    <div class="container">
+        <div class="header">
+            <h1>Profile</h1>
+            <h2>Lance A. W.</h2>
+            <img src="happy_dog.jpg" alt="Happy Dog">
+        </div>
 
-    <img src="sleeping_cat.jpg" width="450">
-    <p></p>
-    <a href="../index.html">Back to Home</a>
+        <div class="hobbies">
+            <h2>Hobbies:</h2>
+            <ul>
+                <li>Sleeping</li>
+                <li>Drawing</li>
+                <li>Listening to music</li>
+            </ul>
+        </div>
+
+        <div class="skills">
+            <h2>Skills:</h2>
+            <ul>
+                <li>Drawing</li>
+                <li>Singing</li>
+                <li>Playing</li>
+                <li>English speaking</li>
+            </ul>
+        </div>
+
+        <div class="activity">
+            <h2>Last Activity</h2>
+            <p>The last thing I did was sleeping :P</p>
+
+            <img src="sleeping_cat.jpg" alt="Sleeping Cat" width="450">
+        </div>
+
+        <div class="buttons">
+            <a href="../index.html" class="home-button">Back to Home</a>
+
+            <button id="interactionButton" class="interaction-button">
+                Click Me!
+            </button>
+        </div>
+    </div>
+
+    <div class="gif-screen" id="gifScreen">
+        <img id="surpriseGif" src="nyan_cat_gif.gif" alt="Surprise GIF">
+
+        <button id="backButton" class="back-button">
+            Back
+        </button>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
