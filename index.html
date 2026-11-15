@@ -1,31 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body{
+        body {
             display: flex;
-            gap: 10px;
             justify-content: center;
             align-items: center;
-            height: 500px;
+            min-height: 100vh;
+            font-family: Georgia, 'Times New Roman', Times, serif;
         }
+
+        #container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 25px;
+            width: 500px;
+            height: 500px;
+            background-color: floralwhite;
+            border-radius: 15px;
+            border: 2px solid black;
+        }
+
+        #container> :nth-child(1) {
+            font-size: 50px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            background: #ffffff;
+            border: 2px solid  black;
+            border-radius: 10px;
+            padding: 10px;      
+        }
+
+        #container :nth-child(2), 
+        #container :nth-child(3),
+        #container :nth-child(4),
+        #container :nth-child(5){
+            margin: 10px;
+        }
+
     </style>
 </head>
+
 <body>
-    <div>
-        <a href="Andra.html">Profile Andra</a>
+    <div id="container">
+        <div>
+            Profil Tim
+        </div>
+        <div>
+            <a href="Andra/Andra.html">Profile Andra</a>
+        </div>
+        <div>
+            <a href="Kendrick/Kendrick.html">Profile Kendrick</a>
+        </div>
+        <div>
+            <a href="Lance/Lance.html">Profile Lance</a>
+        </div>
+        <div>
+            <a href="Rakha/Rakha.html">Profile Rakha</a>
+        </div>
     </div>
-    <div>
-        <a href="Kendrick.html">Profile Kendrick</a>
-    </div>
-    <div>
-        <a href="Lance.html">Profile Lance</a>
-    </div>
-    <div>
-        <a href="Rakha.html">Profile Rakha</a>
-    </div>
+
 </body>
+
 </html>

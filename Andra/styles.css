@@ -4,6 +4,7 @@
      min-width: 100vh;
      justify-content: center;
      font-family: 'Rajdhani', sans-serif;
+     background: linear-gradient(135deg, #e0e7ff, #f3e8ff);
  }
 
  #content-wrapper {
@@ -16,6 +17,8 @@
      align-items: center;
      border: 3px solid rgba(37, 99, 235, 0.3);
      border-radius: 10px;
+     background: #ffffff;
+
  }
 
  #content-wrapper> :nth-child(1) {
