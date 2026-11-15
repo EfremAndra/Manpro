@@ -1,68 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        body{
-            display: flex;
-            min-height: 100vh;
-            margin: 0px;
-        }
-
-        #content-wrapper{
-            display: flex;
-            flex-direction: column;
-            width: 500px;
-            min-height: 100vh;
-            padding: 10px;
-            gap: 20px;
-        }
-
-        #content-wrapper > :nth-child(1){
-            display: flex;
-            font-size: 25px;
-        }
-
-        #content-wrapper > :nth-child(2){
-            display: flex;
-        }
-
-        #content-wrapper > :nth-child(5) {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Rajdhani:wght@500;700&display=swap"
+        rel="stylesheet">
+        <script src="script.js" defer></script>
 </head>
+
 <body>
     <div id="content-wrapper">
-        <div>
-            Efrem Andra Winata
+        <div>Efrem Andra Winata</div>
+        <div id="content_1">
+            <div>
+                <img src="20240731_145434.jpg" alt="" height="300">
+            </div>
+            <div>
+                <div id="Hobi-wrapper">
+                    <div>Hobi</div>
+                    <ul>
+                        <li>Bermain Game</li>
+                        <li>Membaca</li>
+                    </ul>
+                </div>
+                <div id="keahlian-wrapper">
+                    <div>Keahlian</div>
+                    <ul class="skill">
+                        <li>
+                            <span class="skill-name">Java</span>
+                            <div class="grafik">
+                                <div class="isi-grafik" style="width: 70%"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="skill-name">C</span>
+                            <div class="grafik">
+                                <div class="isi-grafik" style="width: 30%"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div>
-            <img src="20240731_145434.jpg" alt="" height="300">
-        </div>
-        <div>
-            <div>Hobi</div>
-            <ul>
-                <li>Bermain Game</li>
-                <li>Membaca</li>
-            </ul>
-        </div>
-        <div>
-            <div>Keahlian</div>
-            <ul>
-                <li>Java</li>
-                <li>C</li>
-            </ul>
-        </div>
-        <div>
-            <div>Aktivitas Terakhir</div>
-            <div><img src="aktivitasTerakhir1.jpg" alt="Gambar ngoding" height="300"></div>
-            <div>Mengerjakan Tugas Manpro</div>
+        <div id="content_2">
+            <div>
+                <div id="text-area">
+                    <div>Aktivitas Terakhir : </div>
+                    <div>Mengerjakan Tugas Manpro</div>
+                </div>
+                <div>
+                    <button class="btn" id="btn-surprise">Click Me for Suprise</button>
+                    <img id="gif-surprise" src="surprise.gif" alt="surprise" width="150">
+                    <div id="overlay"></div>
+                </div>
+            </div>
+            <div>
+                <img src="aktivitasTerakhir1.jpg" alt="Gambar ngoding" height="300">
+            </div>
         </div>
     </div>
 </body>
+
 </html>
