@@ -1,40 +1,88 @@
 <!doctype html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profil Rakha</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
+      <div class="header-nav">
+        <a href="../index.html">⬅Kembali ke Menu Utama</a>
+      </div>
+
       <div class="header">
-        <img src="FotoRakha.jpeg" alt="foto potret Rakha" />
+        <img
+          src="FotoRakha.jpeg"
+          alt="foto potret Rakha"
+          class="clickable-img"
+          title="Klik foto ini!"
+          onclick="openGif('hello.gif')"
+        />
         <h1>Rakha Alfath Rizqia</h1>
       </div>
 
-      <div>
-        <h2 class="section-title">Hobi:</h2>
-        <ul>
-          <li>Main game</li>
-          <li>Ngopi</li>
-          <li>Masak</li>
-          <li>Olahraga</li>
-        </ul>
+      <div class="info-section">
+        <div class="column">
+          <h2 class="section-title">Hobi:</h2>
+          <ul class="list">
+            <li>Denger musik</li>
+            <li>Ngopi</li>
+            <li>Masak</li>
+            <li>Olahraga</li>
+          </ul>
+        </div>
 
-        <h2 class="section-title">Keahlian:</h2>
-        <ul>
-          <li>Java</li>
-          <li>C</li>
-        </ul>
-      </div>
+        <div class="column">
+          <h2 class="section-title">Keahlian:</h2>
+          <div class="skill">
+            <div class="skill-name">Coding Java & C</div>
+            <div class="skill-bar">
+              <div class="skill-level" data-target="40%">40%</div>
+            </div>
+          </div>
 
-      <div>
-        <h2 class="section-title">Aktivitas Terakhir</h2>
-        <div class="activity">
-          <img src="FotoKopi_Rakha.jpeg" alt="foto segelas kopi" />
-          <h3>Ngopi🤤</h3>
+          <div class="skill">
+            <div class="skill-name">Main drum</div>
+            <div class="skill-bar">
+              <div class="skill-level" data-target="60%">60%</div>
+            </div>
+          </div>
         </div>
       </div>
+
+      <div class="activity-section">
+        <h2 class="section-title">Aktivitas Terakhir</h2>
+        <div class="activity-card">
+          <img
+            src="FotoKopi_Rakha.jpeg"
+            alt="foto segelas kopi"
+            class="clickable-img"
+            title="Klik foto ini!"
+            onclick="openGif('selamatpagi.gif')"
+          />
+          <div class="activity-desc">
+            <h3>Ngopi🤤</h3>
+            <p>pagi-pagi ya ngopi lah</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="interactive-section">
+        <button id="surprise-btn" class="surprise-btn" onclick="showSurprise()">
+          Klik ini!!
+        </button>
+      </div>
     </div>
+
+    <div id="gif-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn" onclick="closeGif()">x</span>
+        <img src="" alt="meme gif" id="modal-gif-img" class="modal-gif" />
+      </div>
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
